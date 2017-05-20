@@ -1,0 +1,51 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-title>SUPER HERO</ion-title>
+    <ion-buttons >
+      <button ion-button (click)="delete(birthday)">
+          <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <br><br><br>
+        <div align="center"><img src = "../assets/img/superman.png" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">Who is he?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="hero1.Hero1"></ion-input>
+        </ion-item>
+   </ion-list><br><br><br>
+
+        <div align="center"><img src = "../assets/img/bad.png" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">Who is he?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="hero2.Hero2"></ion-input>
+        </ion-item>
+   </ion-list><br>
+
+    <button ion-button block (click)="save()">Save</button>
+
+  </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

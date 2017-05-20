@@ -1,0 +1,51 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-title>MUSIC</ion-title>
+    <ion-buttons end *ngIf="!isNew">
+      <button ion-button (click)="delete()">
+          <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <br><br><br>
+        <div align="center"><img src = "../assets/img/guitar.png" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">WHAT IS IT?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="music1.Music"></ion-input>
+        </ion-item>
+   </ion-list><br><br><br>
+
+        <div align="center"><img src = "../assets/img/drum.png" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">WHAT IS IT?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="music2.music2"></ion-input>
+        </ion-item>
+   </ion-list><br>
+
+    <button ion-button block (click)="save()">Save</button>
+
+  </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

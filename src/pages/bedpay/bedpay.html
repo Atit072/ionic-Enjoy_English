@@ -1,0 +1,44 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-title>BED ROOM</ion-title>
+    <ion-buttons end *ngIf="!isNew">
+      <button ion-button (click)="delete()">
+          <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <br><br><br>
+        <div align="center"><img src = "../assets/img/bed.jpg" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">What is the thing that covers you when you feel cool?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="bed.Bed"></ion-input>
+        </ion-item>
+   </ion-list><br><br><br>
+
+       
+ 
+
+    <button ion-button block (click)="save()">Save</button>
+
+  </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

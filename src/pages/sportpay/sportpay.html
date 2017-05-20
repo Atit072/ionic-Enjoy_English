@@ -1,0 +1,51 @@
+<ion-header>  
+  <ion-navbar>
+    <ion-title>SPORT</ion-title>
+    <ion-buttons end *ngIf="!isNew">
+      <button ion-button (click)="delete()">
+          <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <br><br><br>
+        <div align="center"><img src = "../assets/img/football.png" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">WHAT IS THIS SPORT?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="sport1.Sport1"></ion-input>
+        </ion-item>
+   </ion-list><br><br><br>
+
+        <div align="center"><img src = "../assets/img/swim.png" width=70% height=70%>
+        <br>
+        <p style="font-family: sans-serif; color: red">WHAT IS THIS SPORT?</p></div>
+    <ion-list>
+        <ion-item>
+            <ion-label>Answer</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="sport2.Sport2"></ion-input>
+        </ion-item>
+   </ion-list><br>
+
+    <button ion-button block (click)="save()">Save</button>
+
+  </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

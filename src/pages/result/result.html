@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      RESULT  🎉
+    </ion-title>
+   <ion-buttons side="left">
+     <button ion-button clear small bold navPop>
+      <ion-icon name="arrow-dropleft" class="icon ion-home custom-icon"></ion-icon>
+    </button>
+    </ion-buttons>
+   
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<br><br>
+   <div align="center"><img src = "../assets/img/logo.jpg" width=80% height=20%></div>
+     <br><br><br>
+   <div align="center"><img src = "../assets/img/screenpic.jpg" width="200" height="200"></div>
+   <br><br>
+    
+  <ion-content>
+    <ion-list inset>
+      <div align="center" style='color:red; font-size: 250%;'>SUPER HERO</div>
+        <ion-item *ngFor="let birthday of birthdays" (click)="showDetail(birthday)">
+          <div item-left>{{ birthday.Hero1 }}</div>
+          <div item-left>{{ birthday.Hero2 }}</div>
+        </ion-item>
+      </ion-list>
+      <br>
+      <ion-list inset>
+      <div align="center" style='color:blue; font-size: 250%;'>MUSIC</div>
+        <ion-item *ngFor="let birthday of birthdays" (click)="showDetail(birthday)">
+          <div item-left>{{ birthday.music1 }}</div>
+          <div item-left>{{ birthday.music2 }}</div>
+        </ion-item>
+      </ion-list>
+       <br>
+      <ion-list inset>
+      <div align="center" style='color:green; font-size: 250%;'>SPORT</div>
+        <ion-item *ngFor="let birthday of birthdays" (click)="showDetail2(birthday)">
+          <div item-left>{{ birthday.Sport1 }}</div>
+          <div item-left>{{ birthday.Sport2 }}</div>
+        </ion-item>
+      </ion-list>
+       <br>
+      <ion-list inset>
+      <div align="center" style='color:red; font-size: 250%;'>LIVING ROOM</div>
+        <ion-item *ngFor="let birthday of birthdays" (click)="showDetail3(birthday)">
+          <div item-left>{{ birthday.Thing1 }}</div>
+        </ion-item>
+      </ion-list>
+       <br>
+      <ion-list inset>
+      <div align="center" style='color:blue; font-size: 250%;'>KITCHEN</div>
+        <ion-item *ngFor="let birthday of birthdays" (click)="showDetail4(birthday)">
+          <div item-left>{{ birthday.Kitchen }}</div>
+        </ion-item>
+      </ion-list>
+       <br>
+      <ion-list inset>
+      <div align="center" style='color:green; font-size: 250%;'>BED ROOM</div>
+        <ion-item *ngFor="let birthday of birthdays" (click)="showDetail5(birthday)">
+          <div item-left>{{ birthday.Bed }}</div>
+        </ion-item>
+      </ion-list>
+</ion-content>
+  
+</ion-content>
+
+
+
+
+  
